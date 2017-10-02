@@ -1,0 +1,44 @@
+{
+    "properties": {
+        "amdPackages": "apprt@^3.8.0"
+    },
+    "load": {
+        "bundleLocations": ["localbundles", "bundles"],
+
+        "allowedBundles": [
+            "system@^3.8.0",
+            "console@^3.x",
+            "splashscreen@^3.8.0",
+            "map@^3.8.0",
+            "templatelayout@^3.8.0",
+            "toolset@^3.8.0",
+            "basemaptoggler@^3.8.0",
+            "basemapgallery@^3.8.0",
+            "dn_urltoolactivator",
+            "parametermanager@^3.8.0"
+        ]
+
+    },
+
+    "bundles": {
+        "map": {
+            "MapState": {
+                "initialExtent": {
+                    "xmin": -1100000,
+                    "ymin": 4000000,
+                    "xmax": 3500000,
+                    "ymax": 8800000,
+                    "spatialReference": {
+                        "wkid": 3857
+                    }
+                }
+            },
+            "MapModelFactory": {
+                "_configLocation": "${app}:services-init.json"
+            },
+            "MappingResourceRegistryFactory": {
+                "_knownServicesLocation": "${app}:services.json"
+            }
+        }
+    }
+}

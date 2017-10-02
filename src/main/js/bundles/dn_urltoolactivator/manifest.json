@@ -1,0 +1,26 @@
+{
+    "Bundle-SymbolicName": "dn_urltoolactivator",
+    "Bundle-Version": "1.0.2-SNAPSHOT",
+    "Bundle-Name": "${bundleName}",
+    "Bundle-Description": "${bundleDescription}",
+    "Product-Name": "devnet-urltoolactivator",
+    "Bundle-StartLevel": 100,
+
+    "Components": [{
+            "name": "URLToolActivator",
+            "provides": [
+                "ct.api.parametermanager.Parametrizable"
+            ],
+            "references": [{
+                    "name": "_activeStateManager",
+                    "providing": "ct.framework.api.EventHandler",
+                    "filter": "(Component-Name=ToolActiveStateManager)"
+                },
+
+                {
+                    "name": "_tools",
+                    "providing": "ct.tools.Tool",
+                    "cardinality": "0..n"
+                }]
+        }]
+} 
