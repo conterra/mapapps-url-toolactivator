@@ -3,7 +3,7 @@ This bundle activates a tool on startup using the, with activeTool marked, toolI
 
 Installation Guide
 ------------------
-**Requirement: map.apps 3.8.0**
+**Requirement: map.apps @^3.1.4**
 
 No special configuration needed. Just add the bundle to the app.json.
 
