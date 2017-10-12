@@ -7,9 +7,15 @@ Installation Guide
 
 No special configuration needed. Just add the bundle to the app.json.
 
-**Demo**
+Sample App
+------------------
 
-https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator 
+https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator?lang=en&activeTool=basemapgalleryToggleTool
+opens the basemapgallery on startup
+https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator?lang=en&activeTool=overviewmap
+opens the overview map on startup
+https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator?lang=en&activeTool=agsprinttool
+opens the printing tool on startup
 
 To activate the basemapgallery atomaticcally when opening the app add &activeTool=basemapgalleryToggleTool to the end of the URL
 
