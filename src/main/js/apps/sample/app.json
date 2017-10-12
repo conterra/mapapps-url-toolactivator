@@ -15,7 +15,9 @@
             "basemaptoggler@^3.1.4",
             "basemapgallery@^3.1.4",
             "dn_urltoolactivator",
-            "parametermanager@^3.1.4"
+            "parametermanager@^3.1.4",
+            "overviewmap@^3.1.4",
+            "agsprinting@^3.1.4"
         ]
 
     },
