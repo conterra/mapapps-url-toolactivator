@@ -16,9 +16,10 @@
             "basemapgallery@^3.1.4",
             "dn_urltoolactivator",
             "parametermanager@^3.1.4",
+            "custominfo@^3.1.4",
             "overviewmap@^3.1.4",
-            "banner@^3.x",
-            "agsprinting@^3.1.4"
+            "agsprinting@^3.1.4",
+            "banner@^3.x"
         ]
 
     },
@@ -29,7 +30,7 @@
                 "label": "Developer Network",
                 "image": "https://www.conterra.de/~/media/conterra/images/site_logos/conterra-logo.ashx",
                 "imagePosition": "above",
-                "link": "http://developernetwork.conterra.de"
+                "link": "https://developernetwork.conterra.de"
             }
         },
         "map": {
@@ -50,6 +51,36 @@
             "MappingResourceRegistryFactory": {
                 "_knownServicesLocation": "${app}:services.json"
             }
+        },
+        "custominfo": {
+            "CustomInfoToggleTool": [
+                {
+                    "id": "customInfoTool",
+                    "activateOnStartup": true,
+                    "title": "Information",
+                    "tooltip": "Information",
+                    "iconClass": "icon-custom-info-info",
+                    "toolClass": "ctInfo",
+                    "togglable": true,
+                    "widgetSettings": {
+                        "title": "Information",
+                        "content": "This app shows the functionality of the url-toolactivator bundle. This bundle activates a tool on startup using the with activeTool marked toolID in the URL. To set the active tool add <b>&activeTool=basemapgalleryToggleTool</b> to the end of the URL. The basemapgallery will be active after opening that URL.",
+                        "window": {
+                            "marginBox": {
+                                "w": 300,
+                                "h": 150,
+                                "l": 25,
+                                "b": 70
+                            },
+                            "draggable": true,
+                            "closable": true,
+                            "modal": false,
+                            "maximizable": false,
+                            "resizable": false
+                        }
+                    }
+                }
+            ]
         }
     }
 }
