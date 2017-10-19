@@ -18,11 +18,6 @@ https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator?lang
 
 opens the overview map on startup
 
-https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator?lang=en&activeTool=agsprinttool
-
-opens the printing tool on startup
-
-To activate the basemapgallery atomaticcally when opening the app add &activeTool=basemapgalleryToggleTool to the end of the URL
 
 
 **Restrictions**
