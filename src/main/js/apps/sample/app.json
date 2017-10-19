@@ -17,12 +17,21 @@
             "dn_urltoolactivator",
             "parametermanager@^3.1.4",
             "overviewmap@^3.1.4",
+            "banner@^3.x",
             "agsprinting@^3.1.4"
         ]
 
     },
 
     "bundles": {
+       "banner": {
+            "BannerWidget": {
+                "label": "Developer Network",
+                "image": "https://www.conterra.de/~/media/conterra/images/site_logos/conterra-logo.ashx",
+                "imagePosition": "above",
+                "link": "http://developernetwork.conterra.de"
+            }
+        },
         "map": {
             "MapState": {
                 "initialExtent": {
