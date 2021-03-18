@@ -35,6 +35,6 @@ export default class URLToolActivator {
 
     _getTool(toolId) {
         const tools = this._tools;
-        return tools.find((tool) => tool.id === toolId)
+        return tools.find((tool) => tool.id === toolId);
     }
 }
