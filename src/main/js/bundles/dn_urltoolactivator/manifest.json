@@ -9,7 +9,7 @@
     ],
     "icon": {},
     "license": {},
-    "productName": "devnet-urltoolactivator",
+    "productName": "devnet-mapapps-url-toolactivator",
     "startLevel": 100,
     "dependencies": {
         "parametermanager": "^4.0.0"
