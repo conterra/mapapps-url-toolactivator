@@ -542,7 +542,7 @@
         },
         "toc": {
             "Config": {
-                "showBasemaps" : true
+                "showBasemaps": true
             }
         },
         "toolset": {
