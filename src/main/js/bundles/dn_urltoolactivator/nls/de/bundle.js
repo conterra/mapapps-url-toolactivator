@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 module.exports = {
-    bundleName: "URLWerkzeugAktivierer",
-    bundleDescription: "Dieses Bundle aktiviert mithilfe der WerkzeugID in der URL ein Werkzeug bereits beim Laden der App."
+    bundleName: "URL-Werkzeug-Aktivierung",
+    bundleDescription: "Dieses Bundle aktiviert mithilfe der WerkzeugID in der URL Werkzeuge bereits beim Start der App."
 };

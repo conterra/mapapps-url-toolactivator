@@ -16,7 +16,7 @@
 module.exports = {
     root: {
         bundleName: "URLToolActivator",
-        bundleDescription: "This bundles makes it possible to to activate a tool with its corresponding toolID with help of the URL."
+        bundleDescription: "This bundle allows activating tools with their corresponding toolID via a URL parameter."
     },
     de: true
 };
