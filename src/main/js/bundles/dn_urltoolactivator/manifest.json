@@ -11,16 +11,17 @@
     "license": {},
     "productName": "devnet-urltoolactivator",
     "startLevel": 100,
-    "Components": [
+    "dependencies": {
+        "parametermanager": "^4.0.0"
+    },
+    "components": [
         {
-            "name": "URLToolActivator",
-            "provides": "parametermanager.Parametrizable",
+            "name": "Config",
+            "impl": "./URLToolActivator",
+            "provides": [
+                "parametermanager.Parametrizable"
+            ],
             "references": [
-                {
-                    "name": "_activeStateManager",
-                    "providing": "ct.framework.api.EventHandler",
-                    "filter": "(Component-Name=ToolActiveStateManager)"
-                },
                 {
                     "name": "_tools",
                     "providing": "ct.tools.Tool",
