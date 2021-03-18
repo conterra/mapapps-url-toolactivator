@@ -4,7 +4,6 @@ This bundles makes it possible to activate a tool with its corresponding toolID 
 
 ## Usage
 
-
 1. First you need to add the bundle dn_bookmarks to your app.
 2. Then you can open the app and add a parameter to the url to open a tool on app start.
 
@@ -12,8 +11,8 @@ This bundles makes it possible to activate a tool with its corresponding toolID 
 
 #### Open the toc on startup
 
-https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator?activeTool=tocToggleTool
+https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator?activeTools=tocToggleTool
 
-#### Open the printing widget on startup
+#### Open the toc and the printing widget on startup
 
-https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator?activeTool=printingToggleTool
+https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator?activeTools=tocToggleTool,printingToggleTool

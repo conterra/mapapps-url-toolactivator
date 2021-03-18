@@ -17,16 +17,24 @@ export default class URLToolActivator {
 
     decodeURLParameter(params) {
         const activeTool = params.activeTool;
-        const tools = this._tools;
+        let activeTools = params.activeTools;
 
-        if (!activeTool) {
-            return;
+        if (activeTool && !activeTools) {
+            activeTools = activeTool;
         }
 
-        tools.forEach((tool) => {
-            if (tool.id === activeTool) {
-                tool.set("active", true);
-            }
-        })
+        if (activeTools) {
+            const toolIds = activeTools.split(",");
+            toolIds.forEach((toolId) => {
+                const tool = this._getTool(toolId);
+                tool && tool.set("active", true);
+            });
+        }
+
+    }
+
+    _getTool(toolId) {
+        const tools = this._tools;
+        return tools.find((tool) => tool.id === toolId)
     }
 }
