@@ -16,8 +16,8 @@
 export default class URLToolActivator {
 
     decodeURLParameter(params) {
-        var activeTool = params.activeTool;
-        var tools = this._tools;
+        const activeTool = params.activeTool;
+        const tools = this._tools;
 
         if (!activeTool) {
             return;
