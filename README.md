@@ -10,7 +10,7 @@ No special configuration needed. Just add the bundle dn_urltoolactivator to the 
 
 ## Sample App
 
-https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator?activeTools=tocToggleTool
+https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator4?activeTools=tocToggleTool
 
 ## Development Guide
 ### Define the mapapps remote base

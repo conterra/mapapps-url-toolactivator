@@ -1,6 +1,6 @@
 # dn_urltoolactivator
 
-This bundles makes it possible to activate a tool with its corresponding toolID with help of the URL.
+This bundle allows activating tools with their corresponding toolID via a URL parameter.
 
 ## Usage
 
@@ -11,8 +11,8 @@ This bundles makes it possible to activate a tool with its corresponding toolID 
 
 #### Open the toc on startup
 
-https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator?activeTools=tocToggleTool
+https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator4?activeTools=tocToggleTool
 
 #### Open the toc and the printing widget on startup
 
-https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator?activeTools=tocToggleTool,printingToggleTool
+https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator4?activeTools=tocToggleTool,printingToggleTool
