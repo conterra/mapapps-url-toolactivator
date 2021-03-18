@@ -1,36 +1,27 @@
 # mapapps-url-toolactivator
-This bundle activates a tool on startup using the, with activeTool marked, toolID in the URL.
 
-Installation Guide
-------------------
-**Requirement: map.apps @^3.1.4**
+This bundles makes it possible to activate a tool with its corresponding toolID with help of the URL.
 
-No special configuration needed. Just add the bundle to the app.json.
+## Installation Guide
 
-Sample App
-------------------
+No special configuration needed. Just add the bundle dn_urltoolactivator to the app.
 
-https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator?lang=en&activeTool=basemapgalleryToggleTool
+[dn_urltoolactivator Documentation](https://github.com/conterra/mapapps-url-toolactivator/tree/master/src/main/js/bundles/dn_urltoolactivator)
 
-opens the basemapgallery on startup
+## Sample App
 
-https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator?lang=en&activeTool=overviewmap
-
-opens the overview map on startup
-
-
+https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator?activeTool=tocToggleTool
 
 **Restrictions**
 
-Only one tool can be activated at the same time. If the tool is not in the initial app nothing will happen.
+Only one tool can be activated at the same time. If the tool is not available in the app nothing will happen.
 
-Development Guide
-------------------
+## Development Guide
 ### Define the mapapps remote base
 Before you can run the project you have to define the mapapps.remote.base property in the pom.xml-file:
 `<mapapps.remote.base>http://%YOURSERVER%/ct-mapapps-webapp-%VERSION%</mapapps.remote.base>`
 
-##### Other methods to to define the mapapps.remote.base property.
+### Other methods to to define the mapapps.remote.base property.
 1. Goal parameters
    `mvn install -Dmapapps.remote.base=http://%YOURSERVER%/ct-mapapps-webapp-%VERSION%`
 
