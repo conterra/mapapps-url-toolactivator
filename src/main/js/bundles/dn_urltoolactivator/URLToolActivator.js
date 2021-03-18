@@ -1,27 +1,32 @@
-//Mam kann ein Tool übergeben
+///
+/// Copyright (C) 2021 con terra GmbH (info@conterra.de)
+///
+/// Licensed under the Apache License, Version 2.0 (the "License");
+/// you may not use this file except in compliance with the License.
+/// You may obtain a copy of the License at
+///
+///         http://www.apache.org/licenses/LICENSE-2.0
+///
+/// Unless required by applicable law or agreed to in writing, software
+/// distributed under the License is distributed on an "AS IS" BASIS,
+/// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+/// See the License for the specific language governing permissions and
+/// limitations under the License.
+///
+export default class URLToolActivator {
 
-define([
-    "dojo/_base/declare",
-    "dojo/_base/array"
-], function (declare, array) {
-    return declare([], {
+    decodeURLParameter(params) {
+        var activeTool = params.activeTool;
+        var tools = this._tools;
 
-        decodeURLParameter: function (params) {
-            var activeTool = params.activeTool;
-            if (!activeTool) {
-                return;
-            }
-
-            array.forEach(
-                    this._tools, function (tool) {
-                        if (tool.id === activeTool) {
-                            tool.set("active", true);
-                        }
-                    });
-
+        if (!activeTool) {
+            return;
         }
 
-    });
-});
-
-
+        tools.forEach((tool) => {
+            if (tool.id === activeTool) {
+                tool.set("active", true);
+            }
+        })
+    }
+}

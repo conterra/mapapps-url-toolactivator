@@ -13,10 +13,4 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-module.exports = {
-    root: {
-        bundleName: "URLToolActivator",
-        bundleDescription: "This bundles makes it possible to to activate a tool with its corresponding toolID with help of the URL."
-    },
-    de: true
-};
+import i18n from "dojo/i18n!./nls/bundle";
