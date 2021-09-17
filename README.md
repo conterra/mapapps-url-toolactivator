@@ -7,19 +7,6 @@ Installation Guide
 
 No special configuration needed. Just add the bundle to the app.json.
 
-Sample App
-------------------
-
-https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator?lang=en&activeTool=basemapgalleryToggleTool
-
-opens the basemapgallery on startup
-
-https://demos.conterra.de/mapapps/resources/apps/downloads_urltoolactivator?lang=en&activeTool=overviewmap
-
-opens the overview map on startup
-
-
-
 **Restrictions**
 
 Only one tool can be activated at the same time. If the tool is not in the initial app nothing will happen.
