@@ -11,7 +11,7 @@
     "license": {},
     "productName": "devnet-mapapps-url-toolactivator",
     "startLevel": 100,
-    "dependencies": {
+    "optionalDependencies": {
         "parametermanager": "^4.0.0"
     },
     "components": [
