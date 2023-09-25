@@ -13,7 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import ServiceResolver from "apprt/ServiceResolver";
+
 export default class URLToolActivator {
+
+    #serviceResolver = undefined;
+
+    activate(componentContext) {
+        const serviceResolver = this.#serviceResolver = new ServiceResolver();
+        const bundleCtx = componentContext.getBundleContext();
+        serviceResolver.setBundleCtx(bundleCtx);
+    }
 
     decodeURLParameter(params) {
         const activeTool = params.activeTool;
@@ -34,7 +44,6 @@ export default class URLToolActivator {
     }
 
     _getTool(toolId) {
-        const tools = this._tools;
-        return tools.find((tool) => tool.id === toolId);
+        return this.#serviceResolver.getService("ct.tools.Tool", "(id=" + toolId + ")");
     }
 }
