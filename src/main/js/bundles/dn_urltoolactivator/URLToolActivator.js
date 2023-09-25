@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 import ServiceResolver from "apprt/ServiceResolver";
+import ct_async from "ct/async";
 
 export default class URLToolActivator {
 
@@ -26,6 +27,19 @@ export default class URLToolActivator {
     }
 
     decodeURLParameter(params) {
+        const props = this._properties;
+
+        if (props.activationDelay && props.activationDelay > 0) {
+            ct_async(() => {
+                this._handleToolActivation(params);
+            }, props.activationDelay);
+        }
+        else {
+            this._handleToolActivation(params);
+        }
+    }
+
+    _handleToolActivation(params) {
         const activeTool = params.activeTool;
         let activeTools = params.activeTools;
 
@@ -40,7 +54,6 @@ export default class URLToolActivator {
                 tool && tool.set("active", true);
             });
         }
-
     }
 
     _getTool(toolId) {
