@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 import ServiceResolver from "apprt/ServiceResolver";
-import ct_async from "ct/async";
+import async from "apprt-core/async";
 
 export default class URLToolActivator {
 
@@ -30,7 +30,7 @@ export default class URLToolActivator {
         const props = this._properties;
 
         if (props.activationDelay && props.activationDelay > 0) {
-            ct_async(() => {
+            async(() => {
                 this._handleToolActivation(params);
             }, props.activationDelay);
         }
