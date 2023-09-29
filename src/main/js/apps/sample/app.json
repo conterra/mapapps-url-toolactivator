@@ -39,6 +39,11 @@
         ]
     },
     "bundles": {
+        "dn_urltoolactivator": {
+            "Config": {
+                "activationDelay": 0
+            }
+        },
         "banner": {
             "BannerWidget": {
                 "label": "Developer Network",

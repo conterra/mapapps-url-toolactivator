@@ -7,8 +7,6 @@
     "keywords": [
         "tools"
     ],
-    "icon": {},
-    "license": {},
     "productName": "devnet-mapapps-url-toolactivator",
     "startLevel": 100,
     "optionalDependencies": {
@@ -21,6 +19,9 @@
             "provides": [
                 "parametermanager.Parametrizable"
             ],
+            "properties": {
+                "activationDelay": 0
+            },
             "references": [
                 {
                     "name": "_tools",
