@@ -1,4 +1,5 @@
-# mapapps-url-toolactivator
+⚠️ This bundle is no longer in active development.
+# Url Toolactivator
 
 This bundles makes it possible to activate a tool with its corresponding toolID with help of the URL.
 
